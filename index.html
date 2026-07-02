@@ -3,25 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>juhe.com 域名出售</title>
+  <title id="page-title">域名出售</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <header class="header">
-      <h1 class="domain-name">juhe.com</h1>
+      <h1 class="domain-name" id="domain-h1">xxx.com</h1>
       <p class="sub-title">优质短拼音域名 · 诚意转让</p>
     </header>
 
     <section class="info-card">
       <div class="poster-box">
-        <!-- 把你的海报放到img文件夹，替换文件名 -->
         <img src="img/philosophy-poster.jpg" alt="域名宣传海报" class="poster">
       </div>
 
       <div class="desc-block">
         <h2>域名介绍</h2>
-        <p>juhe.com 简短好记，拼音直观，适合数据聚合平台、API接口服务、综合资讯门户、一站式工具网站、企业综合服务平台等各类项目，品牌辨识度高，建站适配性极强。</p>
+        <p id="domain-desc-text">xxx.com 简短好记，拼音直观，适合数据聚合平台、API接口服务、综合资讯门户、一站式工具网站、企业综合服务平台等各类项目，品牌辨识度高，建站适配性极强。</p>
         
         <h3>转让说明</h3>
         <ul>
@@ -39,7 +38,6 @@
     <section class="form-box">
       <h2>在线询价</h2>
       <p>填写信息提交，我会尽快联系您洽谈价格与过户事宜</p>
-      <!-- 把下面 YOUR_FORM_ID 替换成你自己 Formspree 表单ID -->
       <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact-form">
         <div class="form-item">
           <label>您的联系方式</label>
@@ -68,5 +66,17 @@
   </div>
 
   <script src="contact.js"></script>
+  <!-- 自动替换域名JS，放在页面最底部 -->
+  <script>
+    // 获取当前访问域名
+    const currentDomain = window.location.hostname;
+    // 页面标题
+    document.getElementById('page-title').innerText = `${currentDomain} 域名出售`;
+    // 顶部大标题 h1
+    document.getElementById('domain-h1').innerText = currentDomain;
+    // 域名介绍段落
+    const descTemplate = `${currentDomain} 简短好记，拼音直观，适合数据聚合平台、API接口服务、综合资讯门户、一站式工具网站、企业综合服务平台等各类项目，品牌辨识度高，建站适配性极强。`;
+    document.getElementById('domain-desc-text').innerText = descTemplate;
+  </script>
 </body>
 </html>
