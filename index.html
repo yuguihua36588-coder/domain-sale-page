@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>juhe.com 域名出售</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="domain-name">juhe.com</h1>
+      <p class="sub-title">优质短拼音域名 · 诚意转让</p>
+    </header>
+
+    <section class="info-card">
+      <div class="poster-box">
+        <!-- 把你的海报放到img文件夹，替换文件名 -->
+        <img src="img/philosophy-poster.jpg" alt="域名宣传海报" class="poster">
+      </div>
+
+      <div class="desc-block">
+        <h2>域名介绍</h2>
+        <p>juhe.com 简短好记，拼音直观，适合数据聚合平台、API接口服务、综合资讯门户、一站式工具网站、企业综合服务平台等各类项目，品牌辨识度高，建站适配性极强。</p>
+        
+        <h3>转让说明</h3>
+        <ul>
+          <li>支持正规域名中介担保交易，安全过户</li>
+          <li>诚意买家可议价，长期有效出售</li>
+          <li>过户流程简单，全程协助操作</li>
+        </ul>
+
+        <div class="price-box">
+          意向价格：面议，欢迎诚意询价
+        </div>
+      </div>
+    </section>
+
+    <section class="form-box">
+      <h2>在线询价</h2>
+      <p>填写信息提交，我会尽快联系您洽谈价格与过户事宜</p>
+      <!-- 把下面 YOUR_FORM_ID 替换成你自己 Formspree 表单ID -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact-form">
+        <div class="form-item">
+          <label>您的联系方式</label>
+          <input type="text" name="contact" placeholder="微信/邮箱/电话" required>
+        </div>
+        <div class="form-item">
+          <label>项目用途</label>
+          <input type="text" name="project" placeholder="打算搭建什么类型网站">
+        </div>
+        <div class="form-item">
+          <label>心理价位</label>
+          <input type="text" name="offer" placeholder="您的预算价格">
+        </div>
+        <div class="form-item">
+          <label>留言备注</label>
+          <textarea name="message" rows="4" placeholder="简单说说你的需求"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">提交询价</button>
+        <p class="tip-text submit-msg"></p>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>洽谈邮箱：xxx@xxx.com | 全天在线回复</p>
+    </footer>
+  </div>
+
+  <script src="contact.js"></script>
+</body>
+</html>
